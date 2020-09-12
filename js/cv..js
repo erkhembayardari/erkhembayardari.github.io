@@ -1,0 +1,51 @@
+
+    (function ($) {
+    "use strict"; // ene bolstrict 
+    $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function () {
+        if (
+            location.pathname.replace(/^\//, "") ==
+                this.pathname.replace(/^\//, "") &&
+            location.hostname == this.hostname
+        ) {
+            var target = $(this.hash);
+            target = target.length
+                ? target
+                : $("[name=" + this.hash.slice(1) + "]");
+            if (target.length) {
+                $("html, body").animate(
+                    {
+                        scrollTop: target.offset().top - 72,
+                    },
+                    1000,
+                    "easeInOutExpo"
+                );
+                return false;
+            }
+        }
+    });
+
+ //responsive menu g haah zoriulalttai 
+    $(".js-scroll-trigger").click(function () {
+        $(".navbar-collapse").collapse("hide");
+    });
+
+    // srcrollby ehluulllllll!!!!
+    $("body").scrollspy({
+        target: "#mainNav",
+        offset: 74,
+    });
+
+    // NAVBARR
+    var navbarCollapse = function () {
+        if ($("#mainNav").offset().top > 100) {
+            $("#mainNav").addClass("navbar-shrink");
+        } else {
+            $("#mainNav").removeClass("navbar-shrink");
+        }
+    };
+    // scrolldoogui ued
+    navbarCollapse();
+    // Pageiig scrolldson ued
+    $(window).scroll(navbarCollapse);
+})(jQuery);
+

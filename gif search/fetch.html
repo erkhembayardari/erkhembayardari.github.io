@@ -1,0 +1,64 @@
+<html>
+    <head>
+        <title></title> 
+    </head>
+    <style>
+        body{
+            background-color: seagreen;
+        }
+        #input{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+            letter-spacing: 2px;
+            word-spacing: 2px;
+            color: #FFFFFF;
+            font-weight: 700;
+            text-decoration: none solid rgb(255, 255, 255);
+            font-style: italic;
+            font-variant: normal;
+            text-transform: capitalize;
+        }
+        .container{
+            margin-left: 55%;
+            margin-top:10%;
+        }
+        image{
+            width: 100%;
+        max-width: 100%;
+        }
+        body{
+            height: 800px;
+            width: 800px;
+        }
+        button {
+            transition-duration: 0.4s;
+            color: black;
+
+        }
+        button:hover {
+            background-color: rgb(20, 148, 62); 
+            color: rgba(168, 12, 90, 0.253);
+        }
+        head{
+            margin:15px
+        }
+        #display{
+            margin-left: 150px;
+            height: 500px;
+            width: 400px    ;
+        }
+    </style>
+    <div class="bcontainer">
+    <body>
+        <div class="container">
+            <input id="myInput" placeholder="хайх GIF" >
+            <button onclick="getData() ">Search</button>
+        </div>
+            
+            <div id="display"></div>
+
+        
+        <script src="fetch.js"></script>
+    </body>
+</div>
+</html>

@@ -1,0 +1,39 @@
+#display{
+   font-family: "Arial Black", Gadget, sans-serif;
+    font-size: 40px;
+    letter-spacing: 0.4px;
+    word-spacing: 2px;
+    color: #000000;
+    font-weight: normal;
+    text-decoration: none;
+    font-style: normal;
+    font-variant: normal;
+    text-transform: none;
+    }
+        button{
+        color: rgb(255, 255, 255); font-size: 40px; line-height: 24px; padding: 6px; border-radius: 13px; font-family: Georgia, serif; font-weight: normal; text-decoration: none; font-style: normal; font-variant: normal; text-transform: none; background-image: linear-gradient(to right, rgb(28, 110, 164) 0%, rgb(35, 136, 203) 50%, rgb(20, 78, 117) 100%); box-shadow: rgb(0, 0, 0) 5px 5px 15px 5px; border: 2px solid rgb(28, 110, 164); display: inline-block;}
+        Button:hover {
+        background: #0ca547; }
+        Button:active {
+        background: #0ca547; }
+        #laps{
+            font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+            font-size: 21px;
+            letter-spacing: -2.2px;
+            word-spacing: 2px;
+            color: #000000;
+            font-weight: normal;
+            text-decoration: none;
+            font-style: normal;
+            font-variant: normal;
+            text-transform: none;
+        }
+        body { 
+            background-color: darkseagreen;   
+        }
+        #laps{
+            width: 500px;
+            height: 300px;
+            overflow: auto;
+            background-color: darkslategray;
+        }

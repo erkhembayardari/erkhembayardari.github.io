@@ -1,0 +1,95 @@
+<!doctype html>
+<html>
+    <head> </head>
+    <body>
+        <title>CLASS LIST</title>
+        <button onclick="change()">change</button>
+            <div id="hoyr"></div>
+            <div id="gurav"></div>
+            <div id="dorov"></div>
+            <style>
+                button {
+                    border-radius: 4px;
+                    background-color: #f4511e;
+                    border: none;
+                    color: #FFFFFF;
+                    text-align: center;
+                    font-size: 28px;
+                    padding: 20px;
+                    width: 150px;
+                    transition: all 0.5s;
+                    cursor: pointer;
+                    margin: 20px;
+                    }
+
+                button span {
+                    cursor: pointer;
+                    display: inline-block;
+                    position: relative;
+                    transition: 0.5s;
+                    }
+
+                button span:after {
+                    content: '\00bb';
+                    position: absolute;
+                    opacity: 0;
+                    top: 0;
+                    right: -20px;
+                    transition: 0.5s;
+                    }
+
+                button:hover span {
+                    padding-right: 25px;
+                    }
+
+                button:hover span:after {
+                    opacity: 1;
+                    right: 0;
+                    }
+                                    
+                body{
+                    background-color:darkseagreen;
+                }
+                div{
+                    width: 100px;
+                    height: 100px;
+                    background-color: darkolivegreen;
+                    margin: 20px;
+                    float: left;
+                } 
+            </style>
+       <script>
+            var ongo = 1
+            function change(){
+            var a = document.getElementById("hoyr")
+            var b = document.getElementById("gurav")
+            var c = document.getElementById("dorov")
+            if(ongo==1){
+                a.style.backgroundColor="darkseagreen"
+                b.style.backgroundColor="darkolivegreen"
+                c.style.backgroundColor="darkolivegreen"
+                ongo=2
+            }else if(ongo==2){
+                a.style.backgroundColor="darkolivegreen"
+                b.style.backgroundColor="darkseagreen"
+                c.style.backgroundColor="darkolivegreen"
+                ongo=3
+            }else if(ongo==3){
+                a.style.backgroundColor="darkolivegreen"
+                b.style.backgroundColor="darkolivegreen"
+                c.style.backgroundColor="darkseagreen"
+                ongo=4
+            }else if (ongo==4){
+                a.style.backgroundColor="darkseagreen"
+                b.style.backgroundColor="darkseagreen"
+                c.style.backgroundColor="darkseagreen"
+                ongo=5
+            }else if (ongo==5){
+                a.style.backgroundColor="darkolivegreen"
+                b.style.backgroundColor="darkolivegreen"
+                c.style.backgroundColor="darkolivegreen"
+                ongo=1
+            }}
+       </script>
+    </body>     
+</html> 

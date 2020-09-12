@@ -1,0 +1,35 @@
+body{
+    background-color: darkseagreen;
+}
+button{
+    border: 50%;
+    color: black;
+    border: 2px solid #4CAF50;
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 16px;
+    letter-spacing: 2px;
+    word-spacing: 2px;
+    font-weight: 400;
+    text-decoration: none;
+
+}
+
+#Myinput{
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 16px;
+    letter-spacing: 2px;
+    word-spacing: 2px;
+    color: rgb(0, 0, 0);
+    font-weight: 400;
+    text-decoration: none;
+}
+#Mydiv{
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 16px;
+    letter-spacing: 2px;
+    word-spacing: 2px;
+    color: rgb(0, 0, 0);
+    font-weight: 400;
+    text-decoration: none;
+    margin-left: 150px;
+}
