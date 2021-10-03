@@ -1,0 +1,78 @@
+<form onsubmit="checker()">
+    <style>
+    input[type='text']
+        {
+          padding:10px;
+          font-size:1.2em;
+        }
+        
+        input[type='submit']
+        {
+          background-color: #4CAF50;
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 1.5em;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+        </style>
+    <p>
+     <input type="text"id="surName" placeholder="Овог"/> 
+    </p>
+    <p>
+      <input type="text"id="Name" placeholder="Нэр"/> 
+    </p>
+    <p>
+        <input type="text"id="Mail" placeholder="Цахим шуудан"/> 
+    </p>
+    <p>
+    <input type="text"id="phone-number" placeholder="Утасны дугаар"/> 
+    </p>
+    <p>
+    <input type="text" id="password" placeholder="Нууц үг" />
+    </p>
+    <p>
+        <input type="text" id="password2" placeholder="Нууц үг давтах" />
+    </p>
+    <p>
+    <input type="submit" />
+     </p>
+     <script>
+         function checker(){
+  //utga avah
+  var surName = document.getElementById('surName').value;
+  var Name = document.getElementById('Name').value;
+  var Mail = document.getElementById('Mail').value;
+  var phoneNumber = document.getElementById('phone-number').value;
+  var password = document.getElementById('password').value;
+  var password2 = document.getElementById('password2').value;
+//Regexuud
+  var sNameRGEX = /"([a-zA-Z]{3,30}\s*)+"/;
+  var yNameRGEX = /"([a-zA-Z]{3,30}\s*)+"/;
+  var emailRGEX = /^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/;
+// Operatoruudin dugaariin ehleluudig oruulah 
+  var phoneRGEX = /[0-9]{8}/
+  //Hamgiin bagadaa 8 character ydaj 1 spec bolon too
+  var passwordRGEX = /"^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{8,}$"/
+
+//   var passwordconfRGEX = 
+
+  //result hadgalah
+    var sNameResult = sNameRGEX.test(surName);
+    var yNameResult = yNameRGEX.test(Name);
+    var mailResult = emailRGEX.test(Mail);
+    var phoneResult = phoneRGEX.test(phoneNumber);
+    var passwordResult = passwordRGEX.test(password);
+    // var phoneResult = phoneRGEX.test(phoneNumber);
+    if (sNameResult || yNameResult || mailResult || phoneResult || passwordResult) {
+        alert('aldaa')
+    }else{
+        alert('done')
+    }
+}
+     </script>
+  </form>
